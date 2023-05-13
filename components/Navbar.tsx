@@ -7,7 +7,8 @@ export function Navbar(){
                 galmv<span className="text-[#2b4c7e]">_</span> 
             </h1>
             <ul className="flex flex-row list-none text-white text-lg">
-                <li className=" border-transparent border-b-2 hover:border-b-2 hover:border-[#2b4c7e]"><Link href=''>About me</Link></li>
+                <li className=" border-transparent border-b-2 hover:border-b-2 hover:border-[#2b4c7e]"><Link href=''>Home</Link></li>
+                <li className="ml-16 hover:border-b-2 hover:border-[#2b4c7e]"><Link href=''>About me</Link></li>
                 <li className="ml-16 hover:border-b-2 hover:border-[#2b4c7e]"><Link href=''>Works</Link></li>
                 <li className="ml-16 hover:border-b-2 hover:border-[#2b4c7e]"><Link href=''>Projects</Link></li>
             </ul>

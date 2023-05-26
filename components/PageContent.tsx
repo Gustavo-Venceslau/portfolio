@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-import { SiIbm } from 'react-icons/si'
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { HiCode } from 'react-icons/hi';
+import { SiIbm } from 'react-icons/si';
+import { FaJava, FaAws } from 'react-icons/fa';
+import { SiTypescript, SiReact, SiMicrosoftazure } from 'react-icons/si'
 
 export function PageContent(){
     return(
@@ -13,8 +16,8 @@ export function PageContent(){
                         <br />
                         de Almeida
                     </h1>
-                    <h1 className="text-white text-6xl">
-                        Hi, I'm Software Developer
+                    <h1 className="text-white text-5xl">
+                        Hi, I'm Software Developer 👋🏻
                     </h1>
                     <p className="mt-4 text-[#606d80]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, justo vitae efficitur porttitor, orci libero rhoncus erat, at molestie tellus tellus venenatis lectus.
@@ -32,12 +35,19 @@ export function PageContent(){
                     </div>
                 </div>
                 <div className="w-1/2 flex justify-end">
-                    <div className="w-[550px] h-[550px] rounded-full bg-[#2b4c7e] mt-10">
-
+                    <div className="w-[550px] h-[550px] rounded-full bg-[#2b4c7e] mt-6 flex justify-center items-center shadow-xl flex-col">
+                        <HiCode size={325} className='mb-4 text-[#1f1f20]'/>
+                        <div className="flex flex-row text-white">
+                            <FaJava  size={35}/>
+                            <SiTypescript className="ml-6" size={35}/>
+                            <SiReact  className="ml-6" size={35}/>
+                            <FaAws  className="ml-6" size={35}/>
+                            <SiMicrosoftazure  className="ml-6" size={35}/>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className="w-full flex justify-center">
+            <section className="w-full flex">
                 <SiIbm size={150} className='text-white/50'/>
                 <div className="h-[150px] flex items-center ml-10">
                     <Image src='/kyndryl_logo.png' alt="" height={56} width={175} className='opacity-50'/>

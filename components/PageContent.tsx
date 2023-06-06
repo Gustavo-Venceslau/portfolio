@@ -34,8 +34,8 @@ export function PageContent(){
                         </Link>
                     </div>
                 </div>
-                <div className="w-1/2 flex justify-end">
-                    <div className="w-[550px] h-[550px] rounded-full bg-[#2b4c7e] mt-6 flex justify-center items-center shadow-xl flex-col">
+                <div className="w-1/2 flex justify-end items-center md:max-2xl:pt-12">
+                    <div className="w-[550px] h-[550px] rounded-full bg-[#2b4c7e] mt-8 md:max-2xl:mt-16 flex justify-center items-center shadow-xl flex-col">
                         <HiCode size={325} className='mb-4 text-[#1f1f20]'/>
                         <div className="flex flex-row text-white">
                             <FaJava  size={35}/>

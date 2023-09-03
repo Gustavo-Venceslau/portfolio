@@ -12,7 +12,7 @@ interface ProjectCardProps{
 
 export function ProjectCard({name, imageURL, githubURL}:ProjectCardProps){
     return(
-        <div className="w-3/6 bg-white p-2 rounded-xl shadow-lg mb-6">
+        <div className="w-3/6 bg-white p-2 rounded-xl shadow-lg">
             <section className="w-full h-52 flex flex-row">
                 <Link href={githubURL}>
                     <Image 

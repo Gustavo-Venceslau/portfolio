@@ -1,7 +1,7 @@
-import { AboutMe } from "@/components/AboutMe";
-import { Navbar } from "@/components/Navbar";
-import { PageContent } from "@/components/PageContent";
-import { Projects } from "@/components/Projects";
+import { AboutMe } from "@/app/aboutMe/Page";
+import { Navbar } from "@/app/navBar/Navbar";
+import { PageContent } from "@/app/pageContent/Page";
+import { Projects } from "@/app/Projects/Projects";
 
 export default function Home() {
   return (

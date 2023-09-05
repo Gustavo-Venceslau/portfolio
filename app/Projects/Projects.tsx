@@ -12,11 +12,15 @@ export function Projects(){
 					<ProjectCard 
 						name="CHESS-SYSTEM"
 						imageURL="/chess-system.jpeg"
+						imageSize={325}
+						projectStack={["JAVA"]}
 						githubURL="https://github.com/Gustavo-Venceslau/chess-system-java"
 					/>
 					<ProjectCard 
 						name="ROCKET COFFEE"
 						imageURL="/rocketcoffee.jpg"
+						imageSize={300}
+						projectStack={["HTML", "CSS"]}
 						githubURL="https://github.com/Gustavo-Venceslau/chess-system-java"
 					/>
 				</div>

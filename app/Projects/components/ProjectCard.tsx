@@ -6,20 +6,26 @@ import { FaGithub } from "react-icons/fa";
 interface ProjectCardProps{
     name: string,
     imageURL: string,
+	imageSize: number,
+	projectStack: Array<string>
     githubURL: string
-    
 }
 
-export function ProjectCard({name, imageURL, githubURL}:ProjectCardProps){
+export function ProjectCard({name, imageURL, imageSize, projectStack, githubURL}:ProjectCardProps){
+	let projectStackKey = 0;
+
     return(
         <div className="w-3/6 bg-white p-2 rounded-xl shadow-lg">
             <section className="w-full h-52 flex flex-row">
-                <Link href={githubURL}>
+                <Link 
+					href={githubURL}
+					className="overflow-hidden rounded-md"
+				>
                     <Image 
                         src={imageURL}
                         alt="chess-system" 
-                        height={100} 
-                        width={325} 
+                        height={imageSize} 
+                        width={imageSize} 
                         className='rounded-md'
                     />
                 </Link>
@@ -27,9 +33,17 @@ export function ProjectCard({name, imageURL, githubURL}:ProjectCardProps){
                     <div>
                         <h3 className="text-md text-[#2b4c7e] font-semibold">{name}</h3>
                         <p className="">A chess-system builded in java without any framework, using OO only.</p>
-                        <h2 className="bg-[#2b4c7e] text-white w-20 h-8 flex justify-center items-center rounded-full mt-5">
-                        JAVA
-                    </h2>
+						<div className="flex flex-row">
+							{
+								projectStack.map(tech => 
+									<h2 
+										key={projectStackKey++}
+										className="bg-[#2b4c7e] text-white w-20 h-8 flex justify-center items-center rounded-full mt-5 mr-2"
+									>
+										{tech}
+									</h2>)
+							}
+						</div>
                     </div>
                     
                     <Link

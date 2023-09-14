@@ -41,19 +41,16 @@ export function CardSlider({cards}: CardSliderProps){
 				/>
 			</div>
 			<div className="mt-2">
-				<input 
-					type="radio" 
-					name="radio-btn" 
-					id="first-radio"
-					onClick={() => setCurrentIndex(0)}
-				/>
-				<input 
-					type="radio" 
-					name="radio-btn" 
-					id="second-radio"
-					className="ml-2"
-					onClick={() => setCurrentIndex(1)}
-				/>
+				{cards.map((card, index) => 
+					<input 
+						key={index}
+						type="radio"
+						name="radio-btn" 
+						id="first-radio"
+						className="first:mr-2"
+						onClick={() => setCurrentIndex(index)}
+					/>
+				)}
 			</div>
 		</div>
 	)

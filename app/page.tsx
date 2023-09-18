@@ -3,6 +3,7 @@ import { Navbar } from "@/app/navBar/Navbar";
 import { PageContent } from "@/app/pageContent/Page";
 import { Projects } from "@/app/Projects/page";
 import { TalkToMe } from "./talkToMe/page";
+import { Works } from "./works/pages";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <PageContent />
       <AboutMe />
+	  <Works />
       <Projects />
 	  <TalkToMe />
     </div>

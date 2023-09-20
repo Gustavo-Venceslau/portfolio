@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { WorkCard } from "./components/WorkCard";
 import { IoIosArrowForward } from "react-icons/io";
+import { CardSlider } from "./components/CardSlider";
 
 export function Works(){
+
 	return(
 		<div className="w-full h-[640px] px-20 flex flex-row justify-between">
 			<section className="flex flex-col justify-between w-1/2 h-[480px]">
@@ -24,9 +25,7 @@ export function Works(){
 					See all my previous jobs <IoIosArrowForward />
 				</Link>
 			</section>
-			<section>
-				<WorkCard />
-			</section>
+			<CardSlider />
 		</div>
 	);
 }

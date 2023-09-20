@@ -4,6 +4,7 @@ import { PageContent } from "@/app/pageContent/Page";
 import { Projects } from "@/app/Projects/page";
 import { TalkToMe } from "./talkToMe/page";
 import { Works } from "./works/pages";
+import { Services } from "./services/page";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <PageContent />
       <AboutMe />
 	  <Works />
+	  <Services />
       <Projects />
 	  <TalkToMe />
     </div>

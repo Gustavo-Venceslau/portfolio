@@ -7,12 +7,12 @@ export function Services(){
 	const iconSize = 70;
 
 	return(
-		<div className="w-full h-[600px]">
+		<div className="w-full h-[560px]">
 			<div className="w-full h-[300px] text-center">
 				<h2 className="text-[#2B4C7E] font-bold text-4xl">Services</h2>
 				<h4 className="text-[#606D80B2]/70 text-2xl">Find the service you need for your business!</h4>
 			</div>
-			<div className="w-full h-[300px] bg-[#2B4C7E] flex flex-row justify-center gap-10">
+			<div className="w-full h-[260px] bg-[#2B4C7E] flex flex-row justify-center gap-10">
 				<ServiceCard 
 					icon={<CgBrowser size={iconSize} color="white" />}
 					title="Front-end"

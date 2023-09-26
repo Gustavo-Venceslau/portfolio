@@ -1,14 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { IoIosArrowBack } from "react-icons/io"
-import { IoIosArrowForward } from "react-icons/io"
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { cards } from "../util/projectCards";
 
-interface CardSliderProps{
-	cards: JSX.Element[]
-}
+export function CardSlider(){
 
-export function CardSlider({cards}: CardSliderProps){
 	const [currentIndex, setCurrentIndex] = useState(0);
 
 	const goToPrevious = () => {
@@ -32,7 +30,11 @@ export function CardSlider({cards}: CardSliderProps){
 					color="#1f1f20"
 					className="cursor-pointer"
 				/>
-				{cards[currentIndex]}
+				<div className="flex flex-row">
+					{cards[currentIndex === 0 ? cards.length - 1 : currentIndex - 1]}
+					{cards[currentIndex]}
+					{cards[currentIndex === cards.length - 1 ? 0 : currentIndex + 1]}
+				</div>
 				<IoIosArrowForward 
 					size={75} 
 					onClick={goToNext}
@@ -40,14 +42,14 @@ export function CardSlider({cards}: CardSliderProps){
 					className="cursor-pointer"
 				/>
 			</div>
-			<div className="mt-2">
-				{cards.map((card, index) => 
+			<div className="mt-4">
+				{cards.map((_, index) => 
 					<input 
 						key={index}
 						type="radio"
 						name="radio-btn" 
 						id="first-radio"
-						className="first:mr-2"
+						className="mx-2"
 						onClick={() => setCurrentIndex(index)}
 					/>
 				)}

@@ -7,18 +7,18 @@ interface ProjectCardProps{
     name: string,
     imageURL: string,
 	imageSize: number,
-	projectStack: Array<string>
-    githubURL: string
+	projectDescription: string,
+    githubURL: string,
 }
 
-export function ProjectCard({name, imageURL, imageSize, projectStack, githubURL}:ProjectCardProps){
+export function ProjectCard({name, imageURL, imageSize, projectDescription,githubURL}:ProjectCardProps){
 
     return(
-        <div className={`w-[300px] bg-white p-2 rounded-xl shadow-lg mx-6`}>
+        <div className={"w-[300px] bg-white p-2 rounded-xl shadow-lg mx-6 relative"}>
             <section className="w-full flex flex-col relative">
                 <Link 
 					href={githubURL}
-					className="rounded-md w-full h-22 select-none"
+					className="rounded-md w-full select-none"
 				>
                     <div 
 						className="w-full h-48"
@@ -28,36 +28,23 @@ export function ProjectCard({name, imageURL, imageSize, projectStack, githubURL}
 							alt="chess-system" 
 							height={imageSize} 
 							width={imageSize} 
-							className='rounded-md'
+							className='rounded-md w-full h-full'
                     	/>
 					</div>
                 </Link>
-                <div className="mt-4 h-full flex flex-col">
+                <div className="mt-4 h-44 flex flex-col justify-between">
                     <div>
                         <h3 className="text-md text-[#2b4c7e] font-semibold">{name}</h3>
-                        <p className="">A chess-system builded in java without any framework, using OO only.</p>
-						<div className="flex flex-row">
-							{
-								projectStack.map((tech, index) => 
-									<h2 
-										key={index}
-										className="bg-[#2b4c7e] text-white w-16 h-6 flex justify-center items-center rounded-full mt-3 mr-2 text-sm select-none"
-									>
-										{tech}
-									</h2>)
-							}
-						</div>
+                        <p className="">{projectDescription}</p>
                     </div>
-                    <Link
-                        href={githubURL}
-						className="w-full flex justify-end"
-					>
-                        <FaGithub 
-							size={25}
-							className="mr-2"
-							color="#2b4c7e"
-						/>   
-                    </Link>
+                    <div className="w-full flex flex-row justify-center gap-4">
+						<Link 
+							href={githubURL}
+							className="px-4 py-[12px] rounded-md bg-[#2b4c7e]/95 text-white hover:bg-[#2b4c7e] flex items-center"
+						>
+							View More
+						</Link>
+					</div>
                 </div>
             </section>
         </div>

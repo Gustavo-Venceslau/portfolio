@@ -42,7 +42,7 @@ export function CardSlider(){
 				{cards}
 			</div>
 			<div className="flex justify-center mt-4">
-				{cards.map((card, index) => 
+				{cards.map((_, index) => 
 					<input 
 						key={index}
 						type="radio"
@@ -50,6 +50,7 @@ export function CardSlider(){
 						id="first-radio"
 						className="first:mr-2"
 						onClick={() => setCurrentIndex(index)}
+						defaultChecked={index === currentIndex}
 					/>
 				)}
 			</div>

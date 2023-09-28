@@ -41,18 +41,20 @@ export function CardSlider(){
 			>
 				{cards}
 			</div>
-			<div className="flex justify-center mt-4">
-				{cards.map((_, index) => 
-					<input 
-						key={index}
-						type="radio"
-						name="radio-btn" 
-						id="first-radio"
-						className="first:mr-2"
-						onClick={() => setCurrentIndex(index)}
-						defaultChecked={index === currentIndex}
-					/>
-				)}
+			<div className="h-4 flex items-center justify-center gap-2 mt-4">
+				{cards.map((_, index) => {
+					return (
+						<div 
+							key={index}
+							className={`transition-all w-3 h-3 bg-[#567EBB] rounded-full cursor-pointer
+								${currentIndex === index ? "p-2" : "bg-opacity-50"}
+							`}
+							onClick={() => setCurrentIndex(index)}
+						>
+
+						</div>
+					)
+				})}
 			</div>
 		</section>
 	)

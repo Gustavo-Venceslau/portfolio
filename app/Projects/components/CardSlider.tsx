@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { cards } from "../util/projectCards";
@@ -16,13 +16,18 @@ export function CardSlider(){
 		const isTheFirst = currentPosition === 0;
 		const newPosition = isTheFirst ? cards.length * SLIDE_NUMBER : currentPosition - SLIDE_NUMBER;
 		setCurrentPosition(newPosition);
-	}
+	};
 
 	const goToNext = () => {
 		const isTheLast = currentPosition === (cards.length - 1)  * SLIDE_NUMBER;
 		const newPosition = isTheLast ? 0 : currentPosition + SLIDE_NUMBER;
 		setCurrentPosition(newPosition);
-	}
+	};
+
+	useEffect(() => {
+		const slideInterval = setInterval(goToNext, 3000);
+		return () => clearInterval(slideInterval);
+	});
 
 	return(
 		<div className="flex flex-col items-center">
@@ -59,8 +64,7 @@ export function CardSlider(){
 								${currentPosition / SLIDE_NUMBER === index ? "p-2" : "bg-opacity-50"}
 							`}
 							onClick={() => setCurrentPosition(SLIDE_NUMBER * index)}
-						>
-							
+						>	
 						</div>
 					)
 				})}

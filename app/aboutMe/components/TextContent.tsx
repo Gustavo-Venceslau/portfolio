@@ -4,7 +4,11 @@ export function TextContent(){
 	return (
 		<div className="w-1/2 p-2 flex flex-col">
                 <div className="w-4/5">
-                    <h1 className="text-[#567ebb] text-base font-bold mb-6">ABOUT ME</h1>
+                    <h1 
+						className="text-[#1F1F20] text-4xl font-bold mb-6"
+					>
+						About <span className="text-[#567ebb]">Me</span> 🧑🏻‍💻
+					</h1>
                     <p className="text-[#606d80]/70 font-semibold mb-5">
                         I am a Developer that love build different projects with diffent technologs. I love computer and how its works and what i can do with then and for this reason a I am doing computer science.
                     </p>

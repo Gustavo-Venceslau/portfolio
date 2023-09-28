@@ -4,36 +4,44 @@ import { useState } from "react"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { cards } from "../util/projectCards";
+import Link from "next/link";
+
+const SLIDE_NUMBER = 348;
 
 export function CardSlider(){
 
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentPosition, setCurrentPosition] = useState(0);
 
 	const goToPrevious = () => {
-		const isTheFirst = currentIndex === 0;
-		const newIndex = isTheFirst ? cards.length - 1 : currentIndex - 1;
-		setCurrentIndex(newIndex);
+		const isTheFirst = currentPosition === 0;
+		const newPosition = isTheFirst ? cards.length * SLIDE_NUMBER : currentPosition - SLIDE_NUMBER;
+		setCurrentPosition(newPosition);
 	}
 
 	const goToNext = () => {
-		const isTheLast = currentIndex === cards.length - 1;
-		const newIndex = isTheLast ? 0 : currentIndex + 1;
-		setCurrentIndex(newIndex);
+		const isTheLast = currentPosition === (cards.length - 1)  * SLIDE_NUMBER;
+		const newPosition = isTheLast ? 0 : currentPosition + SLIDE_NUMBER;
+		setCurrentPosition(newPosition);
 	}
 
 	return(
 		<div className="flex flex-col items-center">
-			<div className="flex items-center">
+			<div className="flex justify-center items-center">
 				<IoIosArrowBack
 					size={75} 
 					onClick={goToPrevious}
 					color="#1f1f20"
 					className="cursor-pointer"
 				/>
-				<div className="flex flex-row">
-					{cards[currentIndex === 0 ? cards.length - 1 : currentIndex - 1]}
-					{cards[currentIndex]}
-					{cards[currentIndex === cards.length - 1 ? 0 : currentIndex + 1]}
+				<div 
+					className="w-[1040px] h-[480px] flex items-center overflow-hidden"
+				>	
+					<div
+						className="flex flex-row transition-transform ease-out duration-700"
+						style={{ transform: `translateX(-${currentPosition}px)`}}
+					>
+						{cards}
+					</div>
 				</div>
 				<IoIosArrowForward 
 					size={75} 
@@ -42,18 +50,27 @@ export function CardSlider(){
 					className="cursor-pointer"
 				/>
 			</div>
-			<div className="mt-4">
-				{cards.map((_, index) => 
-					<input 
-						key={index}
-						type="radio"
-						name="radio-btn" 
-						id="first-radio"
-						className="mx-2"
-						onClick={() => setCurrentIndex(index)}
-					/>
-				)}
+			<div className="h-4 flex items-center justify-center gap-2">
+				{cards.map((_, index) => {
+					return(
+						<div
+							key={index}
+							className={`transition-all w-3 h-3 bg-[#1F1F20] rounded-full cursor-pointer
+								${currentPosition / SLIDE_NUMBER === index ? "p-2" : "bg-opacity-50"}
+							`}
+							onClick={() => setCurrentPosition(SLIDE_NUMBER * index)}
+						>
+							
+						</div>
+					)
+				})}
 			</div>
+			<Link 
+				href="https://github.com/Gustavo-Venceslau?tab=repositories"
+				className="text-white font-semibold text-base mt-9 hover:underline"
+			>
+				See all my projects
+			</Link>
 		</div>
 	)
 }

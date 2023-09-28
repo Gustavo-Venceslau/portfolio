@@ -24,5 +24,30 @@ export const cards: JSX.Element[] = [
 		imageSize={300}
 		projectDescription="Spring application focus on create a platform to students can share knowledge."
 		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
+	/>,
+	<ProjectCard 
+		key={3}
+		name="NICE-IA"
+		imageURL="/nice-ia.jpg"
+		imageSize={300}
+		projectDescription="Spring application focus on create a platform to students can share knowledge."
+		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
+	/>,
+	<ProjectCard 
+		key={4}
+		name="NICE-IA"
+		imageURL="/nice-ia.jpg"
+		imageSize={300}
+		projectDescription="Spring application focus on create a platform to students can share knowledge."
+		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
+	/>,
+	<ProjectCard 
+		key={5}
+		name="ROCKET COFFEE"
+		imageURL="/rocketCoffee.jpeg"
+		imageSize={300}
+		projectDescription="Simple HTML and CSS that was make in the Rocketseat marathon."
+		githubURL="https://github.com/Gustavo-Venceslau/RocketCoffee"
 	/>
+
 ]

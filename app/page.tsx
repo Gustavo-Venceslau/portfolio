@@ -5,6 +5,7 @@ import { Projects } from "@/app/Projects/page";
 import { TalkToMe } from "./talkToMe/page";
 import { Works } from "./works/pages";
 import { Services } from "./services/page";
+import { Footer } from "./footer/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 	  <Services />
       <Projects />
 	  <TalkToMe />
+	  <Footer />
     </div>
   )
 }

@@ -7,7 +7,7 @@ export function Services(){
 	const iconSize = 70;
 
 	return(
-		<div className="w-full h-[560px]">
+		<div className="w-full h-[560px]" id="Services">
 			<div className="w-full h-[300px] text-center">
 				<h2 className="text-[#2B4C7E] font-bold text-4xl">Services</h2>
 				<h4 className="text-[#606D80B2]/70 text-2xl">Find the service you need for your business!</h4>

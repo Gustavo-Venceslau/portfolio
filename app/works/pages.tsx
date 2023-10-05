@@ -5,7 +5,7 @@ import { CardSlider } from "./components/CardSlider";
 export function Works(){
 
 	return(
-		<div className="w-full h-[640px] px-20 flex flex-row justify-between">
+		<div className="w-full h-[640px] px-20 flex flex-row justify-between" id="Works">
 			<section className="flex flex-col justify-between w-1/2 h-[480px]">
 				<div>
 					<h1 className="text-4xl font-bold">

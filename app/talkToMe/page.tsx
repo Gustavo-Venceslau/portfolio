@@ -1,4 +1,5 @@
 import { ContactForm } from "./components/contactForm";
+import { TextAndContacts } from "./components/textAndContacts";
 
 export function TalkToMe(){
 	return(
@@ -7,9 +8,11 @@ export function TalkToMe(){
 				<ContactForm />
 			</div>
 			<div
-				className="w-1/2 h-full"
+				className="w-1/2 h-full flex items-center flex-col"
 			>
+				<TextAndContacts />
 			</div>
+
 		</div>
 	)
 }

@@ -16,9 +16,12 @@ export function RightSideContent(){
 				I am excited to introduce myself as a dedicated professional with a proven track record in software development and database administration. With a strong foundation in problem-solving and FullStack development, I am ready to make an immediate impact on your teams success.
 			</p>
 			<div className="flex flex-row mt-8 items-center">
-				<button className=" w-56 h-14 bg-[#2b4c7e] hover:bg-[#2b4c7e]/75 shadow-xl rounded-full text-white font-semibold text-xl">
+				<a 
+					className=" w-56 h-14 bg-[#2b4c7e] hover:bg-[#2b4c7e]/75 shadow-xl rounded-full text-white font-semibold text-xl flex justify-center items-center"
+					href="#TalkToMe"
+				>
 					Hire me!
-				</button>
+				</a>
 				<Link href='https://www.linkedin.com/in/gustavo-de-almeida-725549155/' className="ml-6 p-4 rounded-full border-[#2b4c7e] border-2 text-[#2b4c7e] hover:text-white hover:bg-[#2b4c7e]">
 					<AiFillLinkedin size={22}/>
 				</Link>

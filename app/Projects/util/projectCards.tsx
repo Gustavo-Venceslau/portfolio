@@ -39,6 +39,6 @@ export const cards: JSX.Element[] = [
 		imageURL="/portfolio.jpg"
 		imageSize={300}
 		projectDescription="My portfolio website is where I put all my projects and professional experience."
-		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
+		githubURL="https://github.com/Gustavo-Venceslau/portfolio"
 	/>
 ]

@@ -27,27 +27,18 @@ export const cards: JSX.Element[] = [
 	/>,
 	<ProjectCard 
 		key={3}
-		name="NICE-IA"
-		imageURL="/nice-ia.jpg"
+		name="CREDIT CARD VALIDATOR"
+		imageURL="/creditCardProject.jpg"
 		imageSize={300}
-		projectDescription="Spring application focus on create a platform to students can share knowledge."
-		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
+		projectDescription="A SpringBoot application for validate credit cards."
+		githubURL="https://github.com/Gustavo-Venceslau/CreditCardValidator"
 	/>,
 	<ProjectCard 
 		key={4}
-		name="NICE-IA"
-		imageURL="/nice-ia.jpg"
+		name="PORTFOLIO"
+		imageURL="/portfolio.jpg"
 		imageSize={300}
-		projectDescription="Spring application focus on create a platform to students can share knowledge."
+		projectDescription="My portfolio website is where I put all my projects and professional experience."
 		githubURL="https://github.com/Gustavo-Venceslau/nice-ia"
-	/>,
-	<ProjectCard 
-		key={5}
-		name="ROCKET COFFEE"
-		imageURL="/rocketCoffee.jpeg"
-		imageSize={300}
-		projectDescription="Simple HTML and CSS that was make in the Rocketseat marathon."
-		githubURL="https://github.com/Gustavo-Venceslau/RocketCoffee"
 	/>
-
 ]

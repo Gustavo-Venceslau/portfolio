@@ -14,8 +14,8 @@ export function Navbar(){
 	}
 
     return(
-		<nav className="bg-[#1f1f20] w-full h-20 flex flex-col justify-between items-center overflow-hidden" id="Home">
-			<div className="flex flex-row justify-between items-center w-full py-5 px-7 lg:px-20 fixed lg:relative bg-[#1f1f20] z-50">
+		<nav className="bg-[#1f1f20] h-20 w-full flex flex-col justify-between items-center relative" id="Home">
+			<div className="w-full flex h-20 flex-row justify-between items-center py-5 px-7 lg:px-20 fixed lg:relative bg-[#1f1f20] z-50">
 				<Logo />
 				<div className="hidden lg:flex">
 					<SectionLinks />
@@ -29,7 +29,7 @@ export function Navbar(){
 				{
 					isVisible ? <button 
 									onClick={() => setIsVisible(false)}
-									className="font-bold text-2xl text-[#2b4c7e]"
+									className="font-bold text-2xl text-[#2b4c7e] flex lg:hidden"
 								>
 									X
 								</button> 

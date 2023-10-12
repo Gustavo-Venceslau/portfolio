@@ -3,13 +3,13 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export function RightSideContent(){
 	return(
-		<div className="w-1/2 pt-20">
-			<h1 className="text-[#567ebb] text-8xl font-semibold mb-4">
+		<div className="md:w-1/2 xs:w-full md:pt-20 xs:pt-7">
+			<h1 className="text-[#567ebb] md:text-8xl xs:text-4xl font-semibold mb-4">
 				Gustavo 
 				<br />
 				de Almeida
 			</h1>
-			<h1 className="text-white text-5xl">
+			<h1 className="text-white md:text-5xl xs:text-2xl">
 				Hi, I am Software Developer 👋🏻
 			</h1>
 			<p className="mt-4 text-[#606d80]">

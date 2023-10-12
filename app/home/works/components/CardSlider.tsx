@@ -34,7 +34,7 @@ export function CardSlider(){
 	})
 
 	return(
-		<section className="w-1/2 overflow-hidden relative">
+		<section className="md:w-1/2 xs:w-full overflow-hidden relative">
 			<div 
 				className="flex flex-row transition-transform ease-out duration-700"
 				style={{ transform: `translateX(-${currentIndex * 100}%)`}}

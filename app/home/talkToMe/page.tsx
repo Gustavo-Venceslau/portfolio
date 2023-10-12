@@ -3,7 +3,7 @@ import { TextAndContacts } from "./components/textAndContacts";
 
 export function TalkToMe(){
 	return(
-		<div className="w-full h-[600px] flex flex-row" id="TalkToMe">
+		<div className="w-full px-20 py-16 flex md:flex-row xs:flex-col" id="TalkToMe">
 			<div className="w-1/2 h-full flex justify-center items-center">
 				<ContactForm />
 			</div>

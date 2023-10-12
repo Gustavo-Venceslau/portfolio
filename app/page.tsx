@@ -1,23 +1,29 @@
-import { AboutMe } from "@/app/aboutMe/Page";
-import { Navbar } from "@/app/navBar/Navbar";
-import { PageContent } from "@/app/pageContent/Page";
-import { Projects } from "@/app/Projects/page";
-import { TalkToMe } from "./talkToMe/page";
-import { Works } from "./works/pages";
-import { Services } from "./services/page";
-import { Footer } from "./footer/page";
+"use client";
+
+import { AboutMe } from "@/app/home/aboutMe/Page";
+import { Navbar } from "@/app/home/navBar/page";
+import { PageContent } from "@/app/home/pageContent/Page";
+import { Projects } from "@/app/home/Projects/page";
+import { TalkToMe } from "./home/talkToMe/page";
+import { Works } from "@/app/home/works/pages";
+import { Services } from "./home/services/page";
+import { Footer } from "./home/footer/page";
+import { AppContexts } from "./home/navBar/components/contexts";
 
 export default function Home() {
-  return (
-    <div className="bg-[#1f1f20] w-full h-screen">
-      <Navbar />
-      <PageContent />
-      <AboutMe />
-	  <Works />
-	  <Services />
-      <Projects />
-	  <TalkToMe />
-	  <Footer />
-    </div>
-  )
+
+	return (
+		<div className="md:w-full xs:max-w-screen h-screen">
+			<AppContexts>
+				<Navbar />
+				<PageContent />
+				<AboutMe />
+				<Works />
+				<Services />
+				<Projects />
+				<TalkToMe />
+				<Footer />
+			</AppContexts>
+		</div>
+	)
 }

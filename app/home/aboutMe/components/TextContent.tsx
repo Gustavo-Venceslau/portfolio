@@ -2,10 +2,10 @@ import { InfoLabel } from "./util/InfoLabel"
 
 export function TextContent(){
 	return (
-		<div className="w-1/2 p-2 flex flex-col">
-                <div className="w-4/5">
+		<div className="md:w-1/2 xs:w-full p-2 flex flex-col">
+                <div className="md:w-4/5 xs:w-full">
                     <h1 
-						className="text-[#1F1F20] text-4xl font-bold mb-6"
+						className="text-[#1F1F20] md:text-4xl xs:text-2xl font-bold mb-6"
 					>
 						About <span className="text-[#567ebb]">Me</span> 🧑🏻‍💻
 					</h1>
@@ -15,12 +15,12 @@ export function TextContent(){
                     <p className="text-[#606d80]/70 font-semibold mb-10">
                         I love work with development and i hope that in the future i can work like Software Engineer in a good company!
                     </p>
-                    <div className="w-full flex flex-row">
-                        <section className="flex flex-col w-1/2">
+                    <div className="w-full flex md:flex-row xs:flex-col">
+                        <section className="flex flex-col md:w-1/2 xs:w-full">
                             <InfoLabel title="NAME" info="Gustavo de Almeida"/>
 							<InfoLabel title="EMAIL" info="gustavodealmeida01@gmail.com"/>
                         </section>
-                        <section className="flex flex-col w-1/2">
+                        <section className="flex flex-col md:w-1/2 xs:w-full">
 							<InfoLabel title="EDUCATION" info="Computer Science | UNIP - Swift"/>
 							<InfoLabel title="EMPLOYMENT" info="Open"/>
                         </section>

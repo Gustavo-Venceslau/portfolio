@@ -4,9 +4,9 @@ import { HiCode } from 'react-icons/hi';
 
 export function LeftSideContent(){
 	return (
-		<div className="w-1/2 flex justify-end items-center md:max-2xl:pt-12">
-			<div className="w-[550px] h-[550px] rounded-full bg-[#2b4c7e] mt-8 md:max-2xl:mt-16 md:flex justify-center items-center shadow-xl flex-col xs:hidden">
-				<HiCode size={325} className='mb-4 text-[#1f1f20]'/>
+		<div className="w-1/2 hidden xl:flex justify-end items-center">
+			<div className="w-[500px] h-[500px] 2xl:w-[550px] 2xl:h-[550px] rounded-full bg-[#2b4c7e] mt-8 flex justify-center items-center shadow-xl flex-col">
+				<HiCode className='mb-4 text-[#1f1f20] w-80 h-80 2xl:w-[325px] 2xl:h-[325px]'/>
 				<div className="flex flex-row text-white">
 					<FaJava  size={35}/>
 					<SiTypescript className="ml-6" size={35}/>

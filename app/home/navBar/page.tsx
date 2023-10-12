@@ -14,7 +14,7 @@ export function Navbar(){
 	}
 
     return(
-		<nav className="bg-[#1f1f20] w-full h-20 flex flex-col justify-between items-center" id="Home">
+		<nav className="bg-[#1f1f20] w-full h-20 flex flex-col justify-between items-center overflow-hidden" id="Home">
 			<div className="flex flex-row justify-between items-center w-full py-5 px-7 lg:px-20 fixed lg:relative bg-[#1f1f20] z-50">
 				<Logo />
 				<div className="hidden lg:flex">
@@ -26,11 +26,20 @@ export function Navbar(){
 					>
 						Talk to me
 				</a>
-				<Hamburger 
-					onClick={handleHamburgerMenu}
-				/>
+				{
+					isVisible ? <button 
+									onClick={() => setIsVisible(false)}
+									className="font-bold text-2xl text-[#2b4c7e]"
+								>
+									X
+								</button> 
+						: 
+						<Hamburger 
+							onClick={handleHamburgerMenu}
+						/>
+				}
 			</div>
-			{isVisible && <HamburgerMenu />}
+			<HamburgerMenu />
 		</nav>
     )
 }    

@@ -2,7 +2,7 @@ import { InfoLabel } from "./util/InfoLabel"
 
 export function TextContent(){
 	return (
-		<div className="md:w-1/2 xs:w-full p-2 flex flex-col">
+		<div className="lg:w-1/2 w-full p-2 flex flex-col">
                 <div className="md:w-4/5 xs:w-full">
                     <h1 
 						className="text-[#1F1F20] md:text-4xl xs:text-2xl font-bold mb-6"

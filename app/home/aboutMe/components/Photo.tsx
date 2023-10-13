@@ -9,14 +9,14 @@ export function Photo(){
 					alt='profile photo' 
 					height={100} 
 					width={300} 
-					className='rounded-full z-50 md:w-[300px] xs:w-60'
+					className='rounded-full z-50 lg:w-[300px] w-[240px] translate-y-[10px] lg:translate-y-0'
 				/>
 				<div 
-					className="bg-[#567ebb] rounded-full md:w-[300px] xs:w-60 md:h-[300px] xs:h-60 absolute translate-y-[68px]"
+					className="bg-[#567ebb] rounded-full lg:w-[300px] w-60 lg:h-[300px] h-60 absolute translate-y-[68px]"
 				>
 				</div>
 				<div 
-					className="border-2 border-[#567ebb] rounded-full md:w-[400px] xs:w-80 md:h-[400px] xs:h-80 absolute translate-y-[68px]"
+					className="border-2 border-[#567ebb] rounded-full lg:w-[400px] w-80 lg:h-[400px] h-80 absolute translate-y-[68px]"
 				>
 				</div>
 			</div>

@@ -4,7 +4,7 @@ import { TextContent } from "./components/TextContent";
 
 export function AboutMe(){
     return(
-        <div className="w-full flex md:flex-row xs:flex-col-reverse md:px-20 xs:p-7 md:pt-12 md:pb-20 items-center" id="AboutMe">
+        <div className="w-full flex flex-col-reverse lg:flex-row lg:px-20 p-7 lg:pt-12 lg:pb-20 items-center" id="AboutMe">
             <Photo />
             <TextContent />
         </div>

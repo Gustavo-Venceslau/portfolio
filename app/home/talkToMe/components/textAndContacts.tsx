@@ -4,9 +4,9 @@ import { BsLinkedin } from "react-icons/bs";
 export function TextAndContacts(){
 	return(
 		<div
-			className="w-3/4 flex items-start flex-col gap-7"
+			className="w-full lg:w-3/4 flex items-start flex-col gap-7"
 		>
-				<h1 className="text-[#1F1F20] text-4xl font-bold">
+				<h1 className="text-[#1F1F20] text-2xl lg:text-4xl font-bold">
 					Talk To <span className="text-[#567EBB]">Me</span> and 
 					lets <span className="text-[#567EBB]">work</span> together 💬
 				</h1>

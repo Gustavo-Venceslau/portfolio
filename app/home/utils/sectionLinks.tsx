@@ -1,6 +1,6 @@
 export function SectionLinks(){
 	return(
-		<ul className="flex flex-col lg:flex-row list-none text-white text-lg gap-10">
+		<ul className="hidden lg:flex flex-col lg:flex-row list-none text-white text-lg gap-10">
 			<a href='#Home'>
 				<li>Home</li>
 			</a>

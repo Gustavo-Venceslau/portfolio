@@ -9,10 +9,11 @@ interface WorkCardProps{
 
 export function WorkCard({imageURL, imageSize, jobTitle, responsibilities}:WorkCardProps){
 	return(
-		<div className="min-w-[720px] h-[480px] bg-[#1F1F20] rounded-2xl p-8 mx-4 shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]">
+		<div className="md:min-w-[93%] min-w-[92%] md:h-[480px] h-[300px] bg-[#1F1F20] rounded-2xl p-8 mx-4 shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]">
 			<Image 
 				src={imageURL} 
-				alt="company logo" width={imageSize} 
+				alt="company logo" 
+				width={imageSize} 
 				height={imageSize}
 			/>
 			<div className="mt-4">
@@ -20,7 +21,7 @@ export function WorkCard({imageURL, imageSize, jobTitle, responsibilities}:WorkC
 					<h2 className="text-lg font-bold text-[#567EBB]">JOB TITLE</h2>
 					<span className="text-[15px] font-medium text-white">{jobTitle}</span>
 				</section>
-				<section className="mt-4">
+				<section className="mt-4 hidden md:flex md:flex-col">
 					<h2 className="text-lg font-bold text-[#567EBB]">RESPONSIBILITIES</h2>
 					<ul className="list-disc ml-6 text-[15px] font-medium text-justify">
 						{
@@ -28,7 +29,7 @@ export function WorkCard({imageURL, imageSize, jobTitle, responsibilities}:WorkC
 								.map((responsability, index) => 
 									<li 
 										key={index}
-										className="text-white"
+										className="text-white text-[10px] lg:text-base"
 									>{responsability}</li>)
 						}
 					</ul>

@@ -6,9 +6,9 @@ import { IoIosArrowForward } from "react-icons/io";
 import { cards } from "../util/projectCards";
 import Link from "next/link";
 
-const SLIDE_NUMBER = 348;
-
 export function CardSlider(){
+
+	const SLIDE_NUMBER = 348;
 
 	const [currentPosition, setCurrentPosition] = useState(0);
 
@@ -39,7 +39,7 @@ export function CardSlider(){
 					className="cursor-pointer"
 				/>
 				<div 
-					className="w-[1040px] h-[480px] flex items-center overflow-hidden"
+					className="w-[19%] lg:w-[1040px] h-[480px] flex items-center overflow-hidden"
 				>	
 					<div
 						className="flex flex-row transition-transform ease-out duration-700"

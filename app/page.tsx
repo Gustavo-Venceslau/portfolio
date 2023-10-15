@@ -1,11 +1,11 @@
 "use client";
 
-import { AboutMe } from "@/app/home/aboutMe/Page";
-import { Navbar } from "@/app/home/navbar/navbar";
-import { PageContent } from "@/app/home/pageContent/Page";
-import { Projects } from "@/app/home/Projects/projects";
+import { AboutMe } from "../app/home/aboutMe/Page";
+import { Navbar } from "../app/home/navbar/navbar";
+import { PageContent } from "../app/home/pageContent/Page";
+import { Projects } from "../app/home/Projects/projects";
 import { TalkToMe } from "./home/talkToMe/talkToMe";
-import { Works } from "@/app/home/works/works";
+import { Works } from "../app/home/works/works";
 import { Services } from "./home/services/services";
 import { Footer } from "./home/footer/footer";
 import { AppContexts } from "./home/navbar/components/contexts";

@@ -3,8 +3,8 @@
 import { UseFormRegister } from "react-hook-form"
 
 interface InputFieldProps{
-	field: string
-	placeholder: string
+	field: string,
+	placeholder: string,
 	register: UseFormRegister<any>
 }
 

@@ -9,6 +9,7 @@ import { Works } from "@/app/home/works/pages";
 import { Services } from "./home/services/page";
 import { Footer } from "./home/footer/page";
 import { AppContexts } from "./home/navBar/components/contexts";
+import 'dotenv/config'
 
 export default function Home() {
 

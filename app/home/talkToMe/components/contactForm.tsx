@@ -2,19 +2,12 @@
 
 import { useForm } from "react-hook-form";
 import { InputField } from "./inputField";
-
-export interface formData {
-	Email: string,
-	Subject: string,
-	Message: string
-}
+import { formData } from "./services/iFormData";
+import { handleSubmitData } from "./services/handleSubmitData";
 
 export function ContactForm(){
-	const { handleSubmit, register } = useForm();
-
-	const handleSubmitData = (data: any) => {
-		console.log(data);
-	}
+	
+	const { handleSubmit, register } = useForm<formData>();
 
 	return(
 		<div className="w-[560px] h-[480px] bg-[#1F1F20] rounded-xl px-14 py-8">
@@ -23,13 +16,13 @@ export function ContactForm(){
 				onSubmit={handleSubmit(handleSubmitData)}
 			>
 				<InputField 
-					field="Email"
-					placeholder="Type your email..."
+					field="Name"
+					placeholder="Type your name..."
 					register={register}
 				/>
 				<InputField 
-					field="Subject"
-					placeholder="Type the subject..."
+					field="Email"
+					placeholder="Type your email..."
 					register={register}
 				/>
 				<InputField 

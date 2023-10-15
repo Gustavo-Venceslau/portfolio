@@ -32,12 +32,6 @@ export function CardSlider(){
 	return(
 		<div className="flex flex-col items-center">
 			<div className="flex justify-center items-center">
-				<IoIosArrowBack
-					size={75} 
-					onClick={goToPrevious}
-					color="#1f1f20"
-					className="cursor-pointer"
-				/>
 				<div 
 					className="w-[19%] lg:w-[1040px] h-[480px] flex items-center overflow-hidden"
 				>	
@@ -48,12 +42,6 @@ export function CardSlider(){
 						{cards}
 					</div>
 				</div>
-				<IoIosArrowForward 
-					size={75} 
-					onClick={goToNext}
-					color="#1f1f20"
-					className="cursor-pointer"
-				/>
 			</div>
 			<div className="h-4 flex items-center justify-center gap-2">
 				{cards.map((_, index) => {

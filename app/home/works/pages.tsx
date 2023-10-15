@@ -14,8 +14,9 @@ export function Works(){
 						tech companies 🚀
 					</h1>
 					<h3 
-						className="md:text-xl text-base text-[#606D80B2]/70 mt-6">
-						In my time in these big companies, I have worked with different teams to learn more and improve my knowledge to be a better professional for the market.
+						className="text-base text-[#606D80B2]/70 mt-6"
+					>
+						During my time at these large companies, I worked with different teams, always in contact with different technologies to learn more and improve my knowledge to be a better professional who can work with different solutions.
 					</h3>
 				</div>
 				<Link

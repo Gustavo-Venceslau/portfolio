@@ -10,7 +10,7 @@ export function TextAndContacts(){
 					Talk To <span className="text-[#567EBB]">Me</span> and 
 					lets <span className="text-[#567EBB]">work</span> together 💬
 				</h1>
-				<p className="text-[#606d80]/70 font-semibold">
+				<p className="text-[#606d80]/70">
 					Lets connect to discuss how my skills can help you reach new heights. Please dont hesitate to contact me on my LinkedIn or via email. Please feel free to contact me by any means.
 				</p>
 				<div className="flex flex-col gap-5 text-xl text-[#606D80]">

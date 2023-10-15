@@ -11,12 +11,12 @@ export function ServiceCard({icon, title, text}: ServiceCardProps){
 		>
 			{icon}
 			<h1 
-				className="text-3xl font-semibold mt-7 text-[#567EBB] group-hover:text-white"
+				className="text-2xl md:text-3xl font-semibold mt-7 text-[#567EBB] group-hover:text-white"
 			>
 				{title}
 			</h1>
 			<p 
-				className="text-base mt-5 text-white"
+				className="text-xs md:text-sm font-semibold mt-5 text-white"
 			>{text}</p>
 		</div>
 	);

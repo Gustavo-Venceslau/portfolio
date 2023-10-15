@@ -32,7 +32,7 @@ export function ContactForm(){
 				/>
 				<div className="w-full flex justify-center">
 					<button 
-						className="px-14 py-4 rounded-full bg-[#2B4C7E] text-white font-semibold mt-10 hover:bg-[#2B4C7E]/80"
+						className="px-12 py-4 rounded-full bg-[#2B4C7E] text-white text-lg font-semibold mt-10 hover:bg-[#2B4C7E]/80"
 						type="submit"
 					>
 						Send

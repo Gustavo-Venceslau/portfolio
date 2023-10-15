@@ -1,14 +1,14 @@
 "use client";
 
 import { AboutMe } from "@/app/home/aboutMe/Page";
-import { Navbar } from "@/app/home/navBar/page";
+import { Navbar } from "@/app/home/navbar/navbar";
 import { PageContent } from "@/app/home/pageContent/Page";
-import { Projects } from "@/app/home/Projects/page";
-import { TalkToMe } from "./home/talkToMe/page";
-import { Works } from "@/app/home/works/pages";
-import { Services } from "./home/services/page";
-import { Footer } from "./home/footer/page";
-import { AppContexts } from "./home/navBar/components/contexts";
+import { Projects } from "@/app/home/Projects/projects";
+import { TalkToMe } from "./home/talkToMe/talkToMe";
+import { Works } from "@/app/home/works/works";
+import { Services } from "./home/services/services";
+import { Footer } from "./home/footer/footer";
+import { AppContexts } from "./home/navbar/components/contexts";
 import 'dotenv/config'
 
 export default function Home() {

@@ -1,8 +1,8 @@
 "use client";
 
-import { AboutMe } from "../app/home/aboutMe/Page";
+import { AboutMe } from "./home/aboutMe/aboutMe";
 import { Navbar } from "../app/home/navbar/navbar";
-import { PageContent } from "../app/home/pageContent/Page";
+import { PageContent } from "./home/pageContent/pageContent";
 import { Projects } from "../app/home/Projects/projects";
 import { TalkToMe } from "./home/talkToMe/talkToMe";
 import { Works } from "../app/home/works/works";

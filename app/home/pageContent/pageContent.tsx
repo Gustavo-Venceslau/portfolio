@@ -5,7 +5,7 @@ import { LeftSideContent } from "./components/LeftSideContent";
 
 export function PageContent(){
     return(
-        <div className="bg-[#1f1f20] lg:px-20 px-7 w-full h-[70vh] lg:h-[75vh] xl:h-[calc(100vh-80px)]">
+        <div className="bg-[#1f1f20] lg:px-20 px-7 w-full lg:h-[75vh] xl:h-[calc(100vh-80px)]">
             <section className="w-full flex lg:flex-row">
                 <RightSideContent />
                 <LeftSideContent />

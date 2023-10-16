@@ -10,7 +10,7 @@ export function ContactForm(){
 	const { handleSubmit, register } = useForm<formData>();
 
 	return(
-		<div className="w-[560px] h-[480px] bg-[#1F1F20] rounded-xl px-14 py-8">
+		<div className="w-[480px] lg:w-[560px] h-[480px] bg-[#1F1F20] rounded-xl px-14 py-8">
 			<form 
 				className="flex flex-col gap-6"
 				onSubmit={handleSubmit(handleSubmitData)}

@@ -9,7 +9,7 @@ interface WorkCardProps{
 
 export function WorkCard({imageURL, imageSize, jobTitle, responsibilities}:WorkCardProps){
 	return(
-		<div className="min-w-[93%] xl:min-w-[95%] md:h-[480px] h-[300px] bg-[#1F1F20] rounded-2xl p-8 mx-4 shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]">
+		<div className="min-w-[92%] xl:min-w-[95%] md:h-[480px] h-[300px] bg-[#1F1F20] rounded-2xl p-8 mx-4 shadow-[2px_4px_4px_2px_rgba(0,0,0,0.25)]">
 			<Image 
 				src={imageURL} 
 				alt="company logo" 
